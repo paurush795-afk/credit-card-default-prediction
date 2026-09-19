@@ -104,10 +104,10 @@ footer {
 
 @st.cache_resource
 def load_model():
-    with open("xgboost_model.pkl", "rb") as file:
+    with open("models/xgboost_model.pkl", "rb") as file:
         model = pickle.load(file)
 
-    with open("threshold.pkl", "rb") as file:
+    with open("models/threshold.pkl", "rb") as file:
         threshold = pickle.load(file)
 
     return model, threshold
